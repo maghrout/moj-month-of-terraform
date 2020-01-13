@@ -1,26 +1,21 @@
 # Month of Terraform
 
-## NPM Commands
 ```bash
-# Build/start/stop terraform docker container
-npm run build
-npm run start
-npm run stop
 
 # Initialise terraform
-npm run exec -- terraform init
+terraform init
 
 # Create terraform plan
-npm run exec -- terraform plan -out terraform.tfplan
+terraform plan -out terraform.tfplan
 
 # Apply terraform plan
-npm run exec -- terraform apply terraform.tfplan
+terraform apply terraform.tfplan
 
 # Import existing resources
-npm run exec -- terraform import {TERRAFORM_ID} {RESOURCE_ID}
+terraform import {TERRAFORM_ID} {RESOURCE_ID}
 
 # Create terraform plan for cleanup
-npm run exec -- terraform plan -destroy -out terraform.tfplan
+terraform plan -destroy -out terraform.tfplan
 ```
 
 ## Lesson 1
